@@ -1,0 +1,489 @@
+/* ここから下に記載していく */
+
+
+/* style for header */
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-size: 14px;
+}
+header {
+    top: 0;
+  
+    background-color: white;
+    height: 110px;
+    position: fixed;
+    width: 1200px;
+    display: flex;
+    z-index: 1;
+}
+.header_logo{
+    padding: 10px;
+    width: 500px;
+}
+  
+.header_navigation{
+    text-align: center;
+    width: calc(100% - 500px);
+}
+  
+.menu_items{
+    list-style-type: none;
+    font-size: 21px;
+    color: black;
+}
+.menu_item{
+    display: inline-block;
+    padding: 50px 25px 50px 25px;
+    margin: 0;
+}
+.menu_item a {
+    text-decoration: none;
+    color: black;
+    cursor: url(../img/cheese_s.png), auto;
+}
+  
+/* style for body */
+/* body{
+    background-color: #fafafa;
+} */
+  
+/* Style for Main Seiction */
+.main{
+    width: 1200px;
+    padding-top: 100px;
+    margin-top: -100px;
+    text-align: center;
+    position: relative; 
+    z-index: -1;   
+  
+}
+.main img {
+    object-fit: conver;
+    width: 100%;
+    height: 100%;    
+}
+  
+.title{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+  
+.main_title{
+    font-size: 50px;
+    font-weight:bold;
+    /* letter-spacing: 0.1em; */
+}
+.main_title_space{
+    height: 30px;
+}
+.main_sub_title{
+    font-size: 36px;
+    font-weight: lighter;
+}
+
+  
+/* avoid hidding section under header */
+.sections{
+    padding-top: 100px;
+    width: 1200px;
+}
+  
+  
+/* common style for sections */
+.section_title_yellow{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffd61a;
+}
+.section_title_black{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    color: #222222;
+  
+}
+.content_header_line{
+    margin-bottom: 60px;
+    line-height: 150%;
+}
+.content_body{
+    margin-bottom: 40px;
+}
+.content_line{
+    margin-bottom: 40px;
+    line-height: 180%;
+}
+  
+  
+/* style for section ABOUT */
+.section_about{
+    width: 100%;
+    padding-top: 100px;
+    margin-top: -100px;
+    text-align: center;
+}
+.about_images {
+    display: inline-flex;
+    height: 200px;
+}
+.about_image {
+    padding: 3px;
+    background-color: #ffffff;
+    transition: .3s;
+    cursor: url(../img/cheese_s.png), auto;
+}
+.about_image:hover{
+    opacity: 0.6;
+}
+  
+/* style for section COURSE */
+.section_course{
+    width: 100%;
+    text-align: center;
+    padding-top: 120px;
+    margin-top: -120px   
+}
+.course_box{
+    width: 100%;
+    height: 400px;
+    display: inline-flex;
+  
+}
+.course_box_img{
+    height: inherit;
+    width: 600px;
+    background-color: cornflowerblue;
+}
+.course_box img {
+    object-fit: conver;
+    width: 100%;
+    height: 100%;
+}
+  .course_box_text{
+    height: inherit;
+    text-align: left;
+    width: 600px;
+    background-color: #fafafa;
+}
+  .box_text_inner{
+    padding-left: 50px;
+    padding-right: 50px;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 480px;
+}
+.box_text_spacer{
+    background-color: yellow;
+    width: auto;
+}
+.course_header{
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.course_content{
+    line-height: 180%;
+}
+/* style for section NEWS */
+.section_news{
+    text-align: center;
+  
+    padding-top: 120px;
+    margin-top: -120px   
+}
+.news_body {
+    display: inline-flex;
+}
+.news_box {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 60px;
+    padding: 3px;
+    width: 300px;
+    height: 400px;
+    cursor: url(../img/cheese_s.png), auto;
+    transition: 0.3s;
+
+}
+
+.news_box:hover {
+    box-shadow: 0 15px 30px -5px rgba(0,0,0,.5), 0 0 5px rgba(0,0,0,.1);
+    transform: translateY(-4px);
+    opacity: 0.8;
+}
+
+.news_text_box {
+    margin-top: 30px;
+    line-height: 180%;
+    text-align: left;
+}
+.news_date {
+    margin-bottom: 24px;
+    text-align: center;
+}
+.button_more {
+    margin-bottom: 60px;
+    height: 60px;
+    width: 300px;
+    cursor: url(../img/cheese_s.png), auto;
+    box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+}
+.button_more:active {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);    
+}
+.button_more:hover {
+    opacity: 0.8;
+}
+.news_box:active {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);    
+}
+
+/* style for section ACCESS */
+.section_access{
+    text-align: center;
+    padding-top: 120px;
+    margin-top: -120px;
+    
+}
+.gmap {
+    margin-bottom: 60px;
+}
+.access_body {
+    background-color: #fafafa;
+
+}
+.access_table {
+    margin: auto;
+    text-align: left;
+    /* height: 150px; */
+}
+.access_table_row {
+    height: 50px;
+}  
+.access_table_col1 {
+    width: 150px;
+}
+.access_table_col2 {
+    width: 400px;
+}
+
+/* style for section CONTACT */
+.section_contact{
+    text-align: center;
+    padding-top: 120px;
+    margin-top: -120px   
+}
+.contact_table {
+    margin: auto;
+    text-align: left;
+    height: 150px;
+    margin-bottom: 30px;
+}
+.contact_table p {
+    line-height: 180%;
+}
+.contact_table tr {
+    height: 36px;
+}
+.contact_table tr {
+    border-top: 1px solid #bfbfbf;
+    border-bottom: 1px solid #bfbfbf;
+    border-spacing: 2px;
+}
+/* .contact_table_col1_width {
+    border-right: 1px solid black;
+} */
+.contact_table td:nth-of-type(1){
+    border-right: 1px solid #bfbfbf;
+}
+.contact_table_col1{
+    /* vertical-align: middle; */
+    padding-top: 10px;
+    padding-left: 16px;
+    width: 240px;
+}
+.contact_table_col2{
+    vertical-align: middle;
+    padding-left: 8px;
+    width: 400px;
+}
+
+.table_text_box {
+    height: 20px;
+    width: 328px;
+    border: 1px solid #bfbfbf;
+}
+input[type="text"]:focus {
+    outline: #ffd61a 2px solid;
+}
+
+.div_check_box {
+    position: relative;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 8px;
+}
+label.label_contact {
+    position: absolute;
+    font-size: 14px;
+    top: 22px;
+    left: 62px;
+}
+.div_text_area {
+    padding: 8px;
+}
+.div_text_area textarea {
+    resize: none;
+    height: 10em;
+    width: 328px;
+    border: 1px solid #bfbfbf;
+}
+textarea.text_area:focus {
+    outline: #ffd61a 2px solid;
+}
+  
+
+/* Change Check Box Style */
+
+input[type="checkbox"]{
+    position: relative;
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+    border: 3px solid #ffd61a;
+    background: #feeeaa;
+    -webkit-appearance: none;
+    appearance: none;    
+}
+input[type="checkbox"]:checked {
+    border: none;
+    background: #fbcd00;
+}
+
+input[type="checkbox"]:checked::before,
+input[type="checkbox"]:checked::after {
+  display: block;
+  content: '';
+  position: absolute;
+  /* border-radius: 2px; */
+  transform: rotate(45deg);
+  background: #fff;
+}
+input[type="checkbox"]:checked::before {
+  bottom: 8px;
+  left: 4px;
+  width: 6px;
+  height: 4px;
+}
+input[type="checkbox"]:checked::after {
+  bottom: 4px;
+  left: 12px;
+  width: 5px;
+  height: 15px;
+}
+
+.button_submit {
+    margin-bottom: 140px;
+    height: 60px;
+    width: 300px;
+    cursor: url(../img/cheese_s.png), auto;
+    box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+}
+.button_submit:active {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);    
+}
+
+
+
+/* style for footer */
+footer{
+    background-color: #707070;
+    color: white;
+    font-size: 16px;
+    height: 70px;
+    width: 100%;
+    /* bottom: 0; */
+    text-align: center;
+  
+}
+
+
+  
+.copyrights{
+    text-align: center;
+    padding: 30px 0 30px;
+}
+  
+  
+/* stype for modal dispalying Photo in ABOUT  */
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 1200px;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+}
+.modal.is-show {
+    opacity: 1;
+    visibility: visible;
+}
+.modal__inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    padding: 50px 50px 10px 50px;
+    background-color: #ffd61a;
+    z-index: 1;
+}
+.modal__inner img {
+    width: 100%;
+}
+.modal__text {
+    padding: 20px;
+    font-size: 16px;
+    color: #181414;
+  
+}
+.modal__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+.modal__close i {
+    font-size: 20px;
+    color: #333;
+}
+.modal__background {
+    position: absolute;
+    /* padding-top: 100px; */
+    margin-top: 100px;
+
+    width: 1200px;
+    height: 100%;
+    background-color: rgb(0,0,0,0.6);
+    z-index: -1;
+    /* cursor: pointer; */
+}
+ 
